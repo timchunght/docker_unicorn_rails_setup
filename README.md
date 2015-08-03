@@ -19,7 +19,7 @@ Now, let's see the magic.
 To run the app, do the following (assuming you are inside the app's root directory)
 
 	docker-compose build
-	docker-compose up #Shut ctrl+c to shut it down, this allows the ``db image to be built if it doesn't exist yet
+	docker-compose up # ctrl+c to shut it down, this allows the ``db`` image to be built if it doesn't exist yet
 	docker-compose run web rake db:create
 	docker-compose run web rake db:migrate
 	docker-compose run web rake assets:precompile
@@ -31,6 +31,6 @@ Now, you app is up and running. It is almost as simple as Heroku.
 
 Note, DigitalOcean has a prebuilt Docker image that you can use. However, you will need to install ``docker-compose`` or previously known as ``fig``. Both ``fig.yml`` and ``docker-compose.yml`` files are accepted by ``docker-compose``. They are syntactically identical.
 
-If everything goes well, you have your app ready to deployed in no time. ``Docker`` to an AWESOME tool for automating your deployment workflow.
+If everything goes well, you have your app ready to be deployed in no time. ``Docker`` to an AWESOME tool for automating your deployment workflow.
 
 #Customisation Section
